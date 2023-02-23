@@ -1,0 +1,295 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif, serif;
+}
+
+.main {display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 18% 88%;
+
+}
+
+
+
+.menu {
+    grid-column: 1/2;
+    grid-row:1/3;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(38, 130, 186);
+    color: white;
+}
+
+.icon, .ul1 {margin-bottom: 20px;}
+
+li {
+    list-style: none;
+}
+
+.icon { 
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+   
+}
+
+.menu >.icon > img {
+    margin-left: 10px;
+    transition: transform 0.9s ease-in-out;
+}
+
+.menu > .icon > img:hover {
+    transform: rotate(360deg);
+}
+
+.icon > img {
+    margin-right: 10px;
+    opacity: 90%;
+}
+
+.icon > li:hover {
+    text-decoration: underline;
+    cursor: default;
+}
+
+.icon > img:hover {
+    opacity: 100%;
+   
+}
+
+.ul1 > .icon > img:hover {
+    width: 30px;
+    height: auto;
+}
+
+.ul2 > .icon > img:hover {
+    width: 30px;
+    height: auto;
+}
+
+
+.icon > li {
+    font-weight: 800;
+    font-size: large;
+}
+
+
+.nav {
+grid-column: 2/3;
+grid-row: 1/2;
+display: grid;
+grid-template-columns: 65% 35%;
+grid-template-rows: 1fr 1fr;
+padding: 30px 35px;
+}
+
+.search{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.search > input {
+width: 100%;
+height: 35px;
+border-radius: 10px;
+border-style: none;
+background-color: rgb(224, 224, 224);
+padding: 10px;
+margin-left: 10px;
+}
+
+.search >img {
+    align-content: center;
+}
+
+.search >img:hover {
+    width: 30px;
+    height: auto;
+}
+
+.nav {
+    display: grid;
+    border-bottom:2px solid grey;
+}                            
+
+.account{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.account>h3 {
+    margin-left: 20px;
+}
+
+.account>h3:hover{
+    text-decoration: underline;
+    cursor:default;
+}
+
+.bell {
+    display: flex;
+    align-items: center;
+}
+
+#bell {
+    align-self: center;
+    margin-right: 20px;
+}
+
+#bell:hover {
+    width: 30px;
+    height: auto;
+}
+
+#walter{
+    transition: transform 0.7s ease-in-out;
+    border-radius: 100%;
+    border: 2px solid black;
+    padding: 8px;
+
+}
+
+#walter:hover{
+    transform: rotate(360deg);
+}
+
+
+.left{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.left>img {margin-right: 10px}
+
+
+.right{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.right > button {
+    margin-left: 20px;
+    width: 100px;
+    height: 35px;
+    border-style: none;
+    border-radius: 15px;
+    background-color: rgb(38, 130, 186);
+    color: white;
+    align-self: center;
+}
+
+
+
+
+.content {
+grid-column: 2/3;
+grid-row: 2/3;
+display: grid;
+grid-template-columns: 72% 28% ;
+background-color: rgb(231, 231, 231);
+}
+
+.projects {
+    margin: 25px;
+}
+
+
+.cardsection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 25px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    justify-content: space-between;
+    border-radius: 10px;
+    border-left: 10px solid rgb(95, 68, 31) ;
+
+}
+
+
+.top{
+align-self: flex-start;
+}
+
+.bottom{
+align-self: flex-end;
+margin-right: 4px;
+}
+
+.bottom>img:hover
+{
+    width: 29px ;
+}
+
+.left>img {
+    border-radius: 100%;
+    border: 3px solid rgb(244, 208, 161);
+    padding: 10px;
+    background-color: rgb(244, 208, 161);
+}
+
+.content-right {
+    margin: 25px;
+}
+
+
+.rightcontent {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+ .first, .second {
+    border-bottom: 1px dashed grey;
+}
+
+.first, .second, .third {
+    padding-bottom: 10px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    
+}
+
+.user> img {
+    margin-right: 10px;
+    border-radius: 100%;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: antiquewhite;
+}
